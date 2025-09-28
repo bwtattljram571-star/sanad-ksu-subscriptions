@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>اشتراك مواد — منصة سند | جامعة الملك سعود</title>
+<meta name="description" content="اشتراك شامل لحلول ومتابعة الأعمال الفصلية + ملخصات ومراجعات — لطلاب جامعة الملك سعود (كل المسارات والكليات).">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* ألوان KSU */
+  --ksu-deep:#002b5c;       /* أزرق داكن */
+  --ksu-mid:#0a4fa1;        /* أزرق متوسّط */
+  --accent:#2BA6FF;         /* أزرق فاتح */
+  --mint:#13C3C1;           /* تركواز خفيف */
+  --bg:#f8fbff;
+  --card:#ffffff;
+  --muted:#6074a8;          /* رمادي مزرق */
+  --success:#16a34a;
+  --danger:#e11d48;
+  --ring:#e2e8f0;
+  --shadow: 0 8px 24px rgba(2,26,59,.10);
+  --radius:14px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:#0b1220;font-family:"Noto Kufi Arabic",system-ui,Segoe UI,Tahoma,sans-serif;line-height:1.65}
+a{color:var(--ksu-mid);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1100px;margin:auto;padding:18px}
+header.top{
+  background:linear-gradient(90deg,var(--ksu-deep),var(--ksu-mid));
+  color:#fff;border-bottom:1px solid #0f284f;
+}
+.brand{display:flex;align-items:center;gap:12px}
+.brand svg{width:46px;height:46px;flex:none;filter:drop-shadow(0 6px 16px rgba(0,0,0,.25))}
+.brand h1{margin:0;font-size:22px}
+.nav{display:flex;gap:12px;flex-wrap:wrap;margin-top:10px}
+.nav a{color:#fff;font-weight:700;padding:6px 10px;border-radius:10px;border:1px solid #ffffff33}
+.nav a:hover{background:#ffffff1a}
+.hero{
+  background:linear-gradient(180deg,#ffffff, #eef6ff);
+  border-radius:var(--radius);padding:22px;box-shadow:var(--shadow);
+  display:grid;gap:16px;grid-template-columns: 1.3fr .9fr;align-items:center;margin-top:16px
+}
+@media (max-width:980px){.hero{grid-template-columns:1fr}}
+.tag{display:inline-block;font-size:12px;font-weight:800;background:#e8f0ff;color:var(--ksu-mid);padding:6px 10px;border-radius:22px}
+.cta{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;gap:8px;font-weight:800;border-radius:12px;padding:10px 14px;border:1px solid transparent;cursor:pointer}
+.btn-primary{background:#fff;color:var(--ksu-deep)}
+.btn-outline{background:transparent;color:#fff;border-color:#ffffff4a}
+.btn-k{background:var(--ksu-mid);color:#fff;border:0}
+.btn-g{background:#18a073;color:#fff}
+.grid{display:grid;gap:16px}
+.cards{grid-template-columns: repeat(3,minmax(0,1fr))}
+@media (max-width:980px){.cards{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--ring);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow)}
+.card h3{margin:.2rem 0  .6rem;font-size:18px;color:var(--ksu-deep)}
+.muted{color:var(--muted);font-size:14px}
+.badge{font-size:12px;background:#edf6ff;border:1px dashed #b5d8ff;color:#094281;border-radius:10px;padding:2px 8px}
+hr{border:none;border-top:1px solid #e7eef9;margin:14px 0}
+.price{font-weight:900;color:#0a4fa1}
+.small{font-size:12px}
+.section-title{display:flex;align-items:center;gap:8px;margin:30px 0 14px}
+.section-title b{font-size:20px;color:var(--ksu-deep)}
+.panel{display:grid;gap:14px}
+.form{display:grid;gap:12px}
+.row{display:grid;gap:12px;grid-template-columns: repeat(3,minmax(0,1fr))}
+@media (max-width:980px){.row{grid-template-columns:1fr}}
+label{font-size:13px;color:#334}
+select, input, textarea{
+  width:100%;padding:12px;border-radius:12px;border:1px solid #dfe7f3;background:#fff;outline:0
+}
+select:focus,input:focus,textarea:focus{box-shadow:0 0 0 4px #cfe5ff;border-color:#99c9ff}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tag-s{background:#f1f6ff;color:#0a4fa1;border:1px solid #d8e7ff;border-radius:10px;padding:4px 8px;font-size:12px}
+.table{width:100%;border-collapse:collapse}
+.table th,.table td{padding:10px;border-bottom:1px solid #eef3fb;text-align:center}
+.table th{background:#f6f9ff;color:#193a6a}
+.footer{
+  margin-top:40px;background:var(--ksu-deep);color:#fff
+}
+.footer a{color:#fff;text-decoration:underline}
+.note{background:#fff8e6;border:1px solid #ffe5a3;color:#7a4c00;border-radius:12px;padding:10px}
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="top">
+  <div class="wrap">
+    <div class="brand">
+      <!-- شعار (كتاب + حرف س) -->
+      <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+            <stop offset="0" stop-color="#0a4fa1"/><stop offset="1" stop-color="#002b5c"/>
+          </linearGradient>
+        </defs>
+        <rect x="7" y="9" width="50" height="46" rx="8" fill="url(#g)"/>
+        <path fill="#fff" d="M15 20h26a2 2 0 010 4H15a2 2 0 010-4zm0 10h34a2 2 0 010 4H15a2 2 0 010-4zm0 10h22a2 2 0 010 4H15a2 2 0 010-4z"/>
+        <path fill="#2BA6FF" d="M38 12c6.5 0 12 5.5 12 12 0 6.7-5.6 12-12.4 12H34v-6.2h3.6c3.5 0 6.2-2.7 6.2-5.9S41.1 18 37.6 18H34v-6h4z"/>
+      </svg>
+      <div>
+        <h1>اشتراك مواد – طلاب جامعة الملك سعود</h1>
+        <div class="tags">
+          <span class="tag">حلول ومتابعة + ملخصات + مراجعات</span>
+          <span class="tag">خصومات على الباقات</span>
+        </div>
+      </div>
+    </div>
+
+    <nav class="nav" style="margin-top:14px">
+      <a href="#subscribe">الاشتراك</a>
+      <a href="#firstyear">المواد المشتركة</a>
+      <a href="#pricing">الأسعار</a>
+      <a href="#faq">الأسئلة</a>
+      <a href="#contact">تواصل</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero -->
+<div class="wrap">
+  <section class="hero">
+    <div>
+      <span class="tag">عرض إلكتروني كامل</span>
+      <h2 style="margin:.3rem 0 1rem;color:#0a2a57">اشترك في المادة اللي تبيها — والباقي علينا ✨</h2>
+      <p class="muted">نغطي كل المسارات والكليات (دبلوم/بكالوريوس). الاشتراك يشمل: متابعة الأعمال الفصلية، حل الواجبات والكويزات بإشراف، ملخصات ومراجعات قبل الاختبار، وتنبيه مواعيد. التسليم مؤكد بعد الدفع.</p>
+      <div class="cta" style="margin-top:8px">
+        <a class="btn btn-k" href="#subscribe">ابدأ اختيار المواد</a>
+        <a class="btn btn-primary" href="#firstyear">شاهد المواد المشتركة</a>
+      </div>
+    </div>
+    <div class="card">
+      <h3>معلومة سريعة</h3>
+      <div class="muted">تلقى السعر وخصم الباقة يحسب تلقائيًا حسب عدد المواد ونوعها، وبضغطة زر تتكوّن رسالة الطلب للواتساب أو التيليجرام.</div>
+      <hr/>
+      <div class="note small">تنبيه: نرفض النسخ/اللصق الأعمى أو استخدام الذكاء الاصطناعي بشكل يرفع الاقتباس — شغلنا خاص ونظيف.</div>
+    </div>
+  </section>
+</div>
+
+<!-- First-year shared courses -->
+<div class="wrap" id="firstyear">
+  <div class="section-title"><b>المواد المشتركة (السنة الأولى)</b><span class="badge">سعر خاص</span></div>
+  <div class="card">
+    <div class="tags">
+      <span class="tag-s">نهج 101</span><span class="tag-s">فجب 101</span><span class="tag-s">تقن 101</span>
+      <span class="tag-s">إنجل 101</span><span class="tag-s">ريد 101</span><span class="tag-s">عرب 101</span><span class="tag-s">إحص 101</span>
+    </div>
+    <hr/>
+    <div class="muted">هذه المواد سعرها أقل (يشمل متابعة + ملخصات مختصرة + مراجعات سريعة)</div>
+  </div>
+</div>
+
+<!-- Subscription Panel -->
+<div class="wrap" id="subscribe">
+  <div class="section-title"><b>اشترك الآن</b><span class="badge">فلترة تلقائية + تسعير فوري</span></div>
+  <div class="card panel">
+
+    <div class="form">
+      <div class="row">
+        <div>
+          <label>المسار</label>
+          <select id="track"></select>
+        </div>
+        <div>
+          <label>الكلية</label>
+          <select id="college"></select>
+        </div>
+        <div>
+          <label>التخصص</label>
+          <select id="program"></select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div>
+          <label>اختر المادة</label>
+          <select id="course"></select>
+        </div>
+        <div>
+          <label>أضف مادة أخرى (اختياري)</label>
+          <select id="course2"></select>
+        </div>
+        <div>
+          <label>أضف مادة ثالثة (اختياري)</label>
+          <select id="course3"></select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div>
+          <label>طريقة الدفع المفضلة</label>
+          <select id="pay">
+            <option value="stc">STC Pay</option>
+            <option value="bank">تحويل بنكي</option>
+            <option value="apple">Apple Pay</option>
+          </select>
+        </div>
+        <div>
+          <label>موعد التسليم (تقريبي)</label>
+          <input id="due" type="date">
+        </div>
+        <div>
+          <label>قناة التواصل</label>
+          <select id="channel">
+            <option value="wa">واتساب</option>
+            <option value="tg">تيليجرام</option>
+          </select>
+        </div>
+      </div>
+
+      <div>
+        <label>ملاحظاتك/متطلبات المادة</label>
+        <textarea id="notes" rows="3" placeholder="اذكر المطلوب (سلايدات، عدد الواجبات/الكويزات، نمط الدكتور..)."></textarea>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3 style="margin-top:0">الفاتورة التقديرية</h3>
+      <table class="table" id="bill">
+        <thead><tr><th>المادة</th><th>النوع</th><th>السعر الأساسي</th></tr></thead>
+        <tbody></tbody>
+        <tfoot>
+          <tr><td colspan="2"><b>خصم الباقة</b></td><td id="disc">0 ر.س</td></tr>
+          <tr><td colspan="2"><b>الإجمالي بعد الخصم</b></td><td id="total" class="price">0 ر.س</td></tr>
+        </tfoot>
+      </table>
+      <div class="small muted">الأسعار تقديرية؛ يتم التأكيد النهائي أثناء البدء.</div>
+      <div class="cta" style="margin-top:10px">
+        <button class="btn btn-k" id="toWA">إرسال الطلب عبر واتساب</button>
+        <button class="btn btn-g" id="toTG">إرسال الطلب عبر تيليجرام</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Pricing quick view -->
+<div class="wrap" id="pricing">
+  <div class="section-title"><b>نظرة سريعة على الأسعار</b></div>
+  <div class="grid cards">
+    <div class="card">
+      <h3>المواد المشتركة</h3>
+      <div class="muted">نهج/فجب/تقن/إنجل/ريد/عرب/إحص</div>
+      <hr/>
+      <div class="price">180 ر.س / مادة</div>
+      <div class="small muted">يشمل متابعة + ملخصات + مراجعات</div>
+    </div>
+    <div class="card">
+      <h3>باقي المواد</h3>
+      <div class="muted">كل الكليات والتخصصات</div>
+      <hr/>
+      <div class="price">250 ر.س / مادة</div>
+      <div class="small muted">يشمل متابعة كاملة ومراجعات أوسع</div>
+    </div>
+    <div class="card">
+      <h3>خصومات الباقات</h3>
+      <div class="muted">تُحتسب تلقائيًا</div>
+      <hr/>
+      <ul class="small" style="margin:0;padding:0 1rem">
+        <li>مادتان: خصم <b>15%</b></li>
+        <li>3 مواد أو أكثر: خصم <b>25%</b></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- FAQ -->
+<div class="wrap" id="faq">
+  <div class="section-title"><b>الأسئلة الشائعة</b></div>
+  <div class="grid">
+    <div class="card">
+      <h3>هل نغطي كل الكليات؟</h3>
+      <div class="muted">إيه، نغطي كل المسارات: صحي، علمي، إداري، إنساني + برامج الدبلوم.</div>
+    </div>
+    <div class="card">
+      <h3>متى يتم التسليم؟</h3>
+      <div class="muted">بعد تأكيد الدفع نبدأ المتابعة مباشرة — أي ملفات/تفاصيل ترسلها تُحفظ تحت الطلب.</div>
+    </div>
+    <div class="card">
+      <h3>سياسة الجودة</h3>
+      <div class="muted">نقدّم أعمال خاصة ومتاحة للمراجعة، وننبّه لأي تضارب أو نسبة اقتباس مرتفعة قبل التسليم.</div>
+    </div>
+  </div>
+</div>
+
+<!-- Contact -->
+<div class="wrap" id="contact">
+  <div class="section-title"><b>تواصل معنا</b></div>
+  <div class="card">
+    <div class="cta">
+      <a class="btn btn-k" href="https://wa.me/966565885750" target="_blank">واتساب مباشر</a>
+      <a class="btn btn-primary" style="background:#229ED9;color:#fff" href="https://t.me/iTx7llxb_15" target="_blank">تيليجرام مباشر</a>
+      <a class="btn" style="background:#f5f7ff;border:1px solid #dfe7f3" href="https://t.me/Helping_KSU" target="_blank">قناة المتجر</a>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="wrap">
+    <div>© <span id="yy"></span> جميع الحقوق محفوظة. منصة سند — خدمات طلابية إلكترونية وتعليمية.</div>
+    <div class="small" style="opacity:.9;margin-top:6px">هذا الموقع لطلاب جامعة الملك سعود — تصميم بسيط وخفيف، بدون جمع بيانات دفع داخلية.</div>
+  </div>
+</footer>
+
+<script>
+/* ----------------- الإعدادات ----------------- */
+const PRICING = {
+  firstYear: 180,   // سعر المادة المشتركة
+  regular: 250,     // سعر بقية المواد
+  discounts: [      // حسب عدد المواد
+    {min: 3, pct: 0.25},
+    {min: 2, pct: 0.15},
+  ]
+};
+
+// مواد مشتركة
+const FIRST_YEAR_COURSES = ["نهج 101","فجب 101","تقن 101","إنجل 101","ريد 101","عرب 101","إحص 101"];
+
+// بيانات بسيطة — تقدر تكبرها لاحقاً
+const DATA = {
+  "صحي": {
+    "كلية الطب": {
+      "طب وجراحة": ["أحياء طبية 1","تشريح أساسي","مهارات تواصل صحية"],
+    },
+    "كلية العلوم الطبية التطبيقية": {
+      "علاج طبيعي": ["فسيولوجيا الحركة","ميكانيكا حيوية"],
+      "مختبرات": ["كيمياء اكلينيكية","أحياء دقيقة طبية"]
+    },
+    "كلية التمريض": {
+      "تمريض عام": ["أساسيات التمريض","تمريض الباطنة والجراحة"]
+    }
+  },
+  "علمي": {
+    "كلية الهندسة": {
+      "هندسة صناعية": ["إحصاء هندسي","بحوث العمليات"],
+      "هندسة كهربائية": ["دوائر كهربائية","إلكترونيات 1"]
+    },
+    "علوم الحاسب والمعلومات": {
+      "علوم الحاسب": ["برمجة 2","هياكل بيانات"],
+      "نظم المعلومات": ["تحليل نظم","قواعد بيانات"]
+    },
+    "كلية العلوم": {
+      "رياضيات": ["تفاضل 2","جبر خطي"],
+      "كيمياء": ["كيمياء عضوية 1","تحليلية 1"],
+      "فيزياء": ["ميكانيكا نيوتونية","فيزياء حديثة"]
+    }
+  },
+  "إداري": {
+    "كلية إدارة الأعمال": {
+      "مالية": ["مبادئ مالية","إدارة محافظ"],
+      "محاسبة": ["محاسبة 1","تكاليف 1"],
+      "تسويق": ["سلوك المستهلك","مبادئ تسويق"]
+    },
+    "الاقتصاد": {
+      "اقتصاد": ["اقتصاد جزئي","اقتصاد كلي"]
+    }
+  },
+  "إنساني": {
+    "الآداب": {
+      "لغة عربية": ["نحو 1","بلاغة 1"],
+      "إعلام": ["خبر وتقرير","تحرير صحفي"]
+    },
+    "الحقوق والعلوم السياسية": {
+      "حقوق": ["مبادئ قانون","قانون مدني 1"]
+    }
+  }
+};
+
+/* --------------- عناصر الواجهة --------------- */
+const els = {
+  track:   document.getElementById('track'),
+  college: document.getElementById('college'),
+  program: document.getElementById('program'),
+  course:  document.getElementById('course'),
+  course2: document.getElementById('course2'),
+  course3: document.getElementById('course3'),
+  due:     document.getElementById('due'),
+  pay:     document.getElementById('pay'),
+  channel: document.getElementById('channel'),
+  notes:   document.getElementById('notes'),
+  billBody:document.querySelector('#bill tbody'),
+  disc:    document.getElementById('disc'),
+  total:   document.getElementById('total'),
+  toWA:    document.getElementById('toWA'),
+  toTG:    document.getElementById('toTG'),
+};
+document.getElementById('yy').textContent = new Date().getFullYear();
+
+/* --------------- تعبئة القوائم --------------- */
+function fillSelect(el, arr, placeholder="— اختر —"){
+  el.innerHTML = "";
+  const o = document.createElement('option');
+  o.value=""; o.textContent = placeholder; el.appendChild(o);
+  arr.forEach(v=>{
+    const opt = document.createElement('option');
+    opt.value=v; opt.textContent=v; el.appendChild(opt);
+  });
+}
+
+function onTrack(){
+  const t = els.track.value;
+  if(!t){ fillSelect(els.college,[]); fillSelect(els.program,[]); fillSelectAllCourses([]); return; }
+  fillSelect(els.college, Object.keys(DATA[t]), "— اختر الكلية —");
+  fillSelect(els.program, [], "— اختر التخصص —");
+  fillSelectAllCourses([]);
+}
+function onCollege(){
+  const t = els.track.value, c = els.college.value;
+  if(!t || !c){ fillSelect(els.program,[]); fillSelectAllCourses([]); return; }
+  fillSelect(els.program, Object.keys(DATA[t][c]), "— اختر التخصص —");
+  fillSelectAllCourses([]);
+}
+function onProgram(){
+  const t = els.track.value, c = els.college.value, p = els.program.value;
+  if(!t || !c || !p){ fillSelectAllCourses([]); return; }
+  const courses = [...(DATA[t][c][p]||[]), ...FIRST_YEAR_COURSES];
+  fillSelectAllCourses(courses);
+  updateBill();
+}
+function fillSelectAllCourses(list){
+  [els.course, els.course2, els.course3].forEach((s,i)=>{
+    fillSelect(s, list, i===0?"— اختر المادة —":"(اختياري)");
+  });
+}
+
+/* --------------- التسعير والفاتورة --------------- */
+function isFirstYear(name){
+  return FIRST_YEAR_COURSES.includes(name||"");
+}
+function priceFor(name){
+  return isFirstYear(name) ? PRICING.firstYear : PRICING.regular;
+}
+function calc(){
+  const chosen = [els.course.value, els.course2.value, els.course3.value].filter(Boolean);
+  const lines = chosen.map(n=>({name:n,type:isFirstYear(n)?"مشتركة":"عادية",price:priceFor(n)}));
+  const subtotal = lines.reduce((a,b)=>a+b.price,0);
+  let disc=0;
+  for(const d of PRICING.discounts){
+    if(chosen.length >= d.min){ disc = Math.max(disc, subtotal*d.pct); }
+  }
+  return {lines, subtotal, disc, total: Math.max(0, subtotal-disc)};
+}
+function updateBill(){
+  const {lines, disc, total} = calc();
+  els.billBody.innerHTML = "";
+  lines.forEach(r=>{
+    const tr = document.createElement('tr');
+    tr.innerHTML = `<td>${r.name}</td><td>${r.type}</td><td>${r.price} ر.س</td>`;
+    els.billBody.appendChild(tr);
+  });
+  els.disc.textContent = `${Math.round(disc)} ر.س`;
+  els.total.textContent = `${Math.round(total)} ر.س`;
+}
+['change','keyup'].forEach(ev=>{
+  [els.track,els.college,els.program,els.course,els.course2,els.course3].forEach(x=>x.addEventListener(ev,()=>{ if(x===els.track)onTrack(); else if(x===els.college)onCollege(); else if(x===els.program)onProgram(); updateBill(); }));
+});
+onTrack(); // تعبئة أولية
+fillSelect(els.track, Object.keys(DATA), "— اختر المسار —");
+
+/* --------------- تكوين رسالة الطلب --------------- */
+function buildMessage(){
+  const {lines, total, disc} = calc();
+  const t  = els.track.value || "غير محدد";
+  const c  = els.college.value || "غير محدد";
+  const p  = els.program.value || "غير محدد";
+  const due = els.due.value || "غير محدد";
+  const pay = {stc:"STC Pay", bank:"تحويل بنكي", apple:"Apple Pay"}[els.pay.value] || "غير محدد";
+  const list = lines.length? lines.map((r,i)=>`${i+1}) ${r.name} — ${r.type}`).join("%0a") : "لا يوجد";
+  const notes = (els.notes.value||"لا شيء").replace(/\n/g,"%0a");
+
+  let msg  = `طلب اشتراك مواد — جامعة الملك سعود%0a`;
+  msg += `المسار: ${t}%0aالكلية: ${c}%0aالتخصص: ${p}%0a%0a`;
+  msg += `المواد المختارة:%0a${list}%0a%0a`;
+  msg += `إجمالي بعد الخصم: ${Math.round(total)} ر.س (خصم: ${Math.round(disc)}).%0a`;
+  msg += `موعد التسليم التقريبي: ${due}%0aطريقة الدفع: ${pay}%0a%0a`;
+  msg += `ملاحظات:${"%0a"}${notes}%0a%0a`;
+  msg += `الاسم (اختياري): ________%0aالرقم الجامعي (اختياري): ________%0aالشعبة (اختياري): ________`;
+  return msg;
+}
+function openWA(){
+  const url = `https://wa.me/966565885750?text=${buildMessage()}`;
+  window.open(url,'_blank');
+}
+function openTG(){
+  const url = `https://t.me/iTx7llxb_15?start=${encodeURIComponent('contact')}`;
+  // تيليجرام لا يدعم النص الطويل بالـ start، نفتح المحادثة ونلصق الرسالة يدوي
+  alert("تم فتح تيليجرام، انسخ الرسالة التالية والصقها هناك:\n\n" + decodeURIComponent(buildMessage().replace(/%0a/g,"\n")));
+  window.open(url,'_blank');
+}
+els.toWA.addEventListener('click', openWA);
+els.toTG.addEventListener('click', openTG);
+</script>
+</body>
+</html>
